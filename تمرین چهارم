@@ -1,0 +1,14 @@
+//قدر مطلق اعداد را حساب میکند
+
+//گرفتن عدد از کاربر
+Console.Write("Enter a number:");
+int number = int.Parse(Console.ReadLine());
+
+//محاسبه قدر مطلق عدد
+if (number < 0 )
+{
+    number = -number;
+}
+
+//نمایش قدرمطلق عدد 
+Console.WriteLine($"The absolute value is:{number}");
