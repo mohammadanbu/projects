@@ -1,0 +1,31 @@
+Console.WriteLine("Welcome to the Project12");
+Console.WriteLine("Name Project:Sum of Array Elements");
+Console.WriteLine("--------------------------------------");
+//گرفتن ورودی از کاربر
+Console.Write("Enter the number of elements in the array:");
+//گرفتن تعداد خونه های ارایه
+int n = int.Parse(Console.ReadLine());
+
+int[] numbers = new int[n];
+
+Console.Write("Enter the elements of the array:");
+//گرفتن خونه های ارایه
+for (int i = 0; i < n; i++)
+{
+    numbers[i] = int.Parse(Console.ReadLine());
+}
+Console.WriteLine("Input presentations:");
+//نمایش خونه های ارایه
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine($"{numbers[i]}  ");
+}
+//مجموع خونه های ارایه
+int sum = 0;
+//حلقه for برای جمع کردن ارایه ها
+for (int i = 0;i < numbers.Length; i++)
+{
+    sum += numbers[i];
+}
+//چاپ کردن جمع اعداد
+Console.WriteLine($"sum array:{sum}");
