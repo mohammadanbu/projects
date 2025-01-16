@@ -1,0 +1,17 @@
+//عددی را وارد کند یا زوج یا فرد است
+//گرفتن عدد از کاربر
+Console.Write("Enter a number:");
+int number = int.Parse(Console.ReadLine());
+
+//حلقه برای پیدا کردن عدد زوج و فرد
+//حلقه پیدا کردن زوج
+if (number % 2 == 0)
+{
+    Console.WriteLine("The number is even.");
+
+}
+//درغیر این صورت این عدد فرد میشود
+else
+{
+    Console.WriteLine("The number is odd.");
+}
