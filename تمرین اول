@@ -1,0 +1,19 @@
+//دریافت سه عدد از کاربر 
+
+//دریافت عدد اول
+Console.Write("Enter the first number:");
+int number1 = int.Parse(Console.ReadLine());
+
+//دریافت عدد دوم 
+Console.Write("Enter the second number:");
+int number2 = int.Parse(Console.ReadLine());
+
+//دریافت عدد سوم
+Console.Write("Enter the third number:");
+int number3 = int.Parse(Console.ReadLine());
+
+//محاسبه میانگین سه اعداد
+int average = (number1 + number2 + number3) / 3;
+
+//نشان دادن میانگین اعداد
+Console.WriteLine($"average={average}");
